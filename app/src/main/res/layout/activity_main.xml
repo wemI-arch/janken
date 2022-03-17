@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/resultMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0勝0敗"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/comMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="勝負よ！"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultMessage" />
+
+    <TextView
+        android:id="@+id/buttonMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ボタンを押してね"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/comHandMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="👍"
+        android:textAlignment="center"
+        android:textSize="96sp"
+        app:layout_constraintBottom_toTopOf="@+id/vsMessage"
+        app:layout_constraintEnd_toEndOf="@+id/vsMessage"
+        app:layout_constraintStart_toStartOf="@+id/vsMessage"
+        app:layout_constraintTop_toBottomOf="@+id/comMessage" />
+
+    <TextView
+        android:id="@+id/youHandMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="👍"
+        android:textAlignment="center"
+        android:textSize="96sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMessage"
+        app:layout_constraintEnd_toEndOf="@+id/vsMessage"
+        app:layout_constraintStart_toStartOf="@+id/vsMessage"
+        app:layout_constraintTop_toBottomOf="@+id/vsMessage" />
+
+    <TextView
+        android:id="@+id/vsMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VS"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comMessage" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="✊"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMessage" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="✌"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintStart_toEndOf="@+id/button1" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="✋"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMessage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
